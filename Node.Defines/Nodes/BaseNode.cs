@@ -6,7 +6,7 @@ namespace Node.Defines.Nodes
 {
 	public abstract class BaseNode : Node
 	{
-		public BaseNode()
+		protected BaseNode()
 		{
 			this.Children = new List<string>();
 			this.Type = GetType().ToString();

@@ -13,5 +13,7 @@ namespace Node.Defines.Defines
 		List<string> Children { get; set; }
 
 		NodePosition Position { get; set; }
+
+		string GetJson();
 	}
 }

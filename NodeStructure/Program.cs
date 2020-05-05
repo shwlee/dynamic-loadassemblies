@@ -36,9 +36,9 @@ namespace NodeStructure
 
 			//var tcp = JsonConvert.DeserializeObject(Samples.TcpJson);			
 			//var node = System.Text.Json.JsonSerializer.Deserialize<INode>(Samples.TcpJson);
-			var node = JsonConvert.DeserializeObject<NodeGroups>(Samples.TcpJson, new JsonSerializerSettings
+			var node = JsonConvert.DeserializeObject<INode>(Samples.TcpJson, new JsonSerializerSettings
 			{
-				TypeNameHandling = TypeNameHandling.All,
+				TypeNameHandling = TypeNameHandling.Objects,
 				ConstructorHandling = ConstructorHandling.AllowNonPublicDefaultConstructor
 			});
 			//var tcp = JsonSerializer.DeserializeFromString<NodeGroups>(Samples.TcpJson);

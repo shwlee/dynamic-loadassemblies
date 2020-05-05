@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\Nodes.Receivers.Tcp.csproj" />
+    <ProjectReference Include="..\Nodes.Receivers.Tcp\Nodes.Receivers.Tcp.csproj" />
   </ItemGroup>
 
 </Project>
